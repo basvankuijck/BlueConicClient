@@ -17,7 +17,6 @@
     "flatten": false
   },
   "source_files": "*.{h,swift,m}",
-  "default_subspecs": "main",
   "resources": [
     "*.{png}"
   ],
