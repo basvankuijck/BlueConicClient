@@ -1,0 +1,53 @@
+{
+  "name": "BlueConicClient",
+  "version": "2.1.7",
+  "license": {
+    "type": "Commercial"
+  },
+  "homepage": "https://blueconic.com",
+  "authors": {
+    "BlueConic": "info@blueconic.com"
+  },
+  "summary": "The BlueConicClient Framework provides the basis for communication with BlueConic.",
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source": {
+    "git" : "git@github.com:basvankuijck/BlueConicClient.git"
+  },
+  "source_files": "BlueConicClient/BlueConicClient.h",
+  "default_subspecs": "main",
+  "resources": [
+    "BlueConicClient/Resources/*.{png}",
+    "BlueConicClient/Resources/**/*.{png}"
+  ],
+  "resource_bundles": {
+    "Assets": [
+      "BlueConicClient/Resources/*.{png}",
+      "BlueConicClient/Resources/**/*.{png}"
+    ]
+  },
+  "subspecs": [{
+    "name": "main",
+    "dependencies": {
+      "BlueConicClient/BlueConicClient": [],
+      "BlueConicClient/impl": [],
+      "BlueConicClient/Plugins": []
+    }
+  }, {
+    "name": "BlueConicClient",
+    "source_files": "BlueConicClient/*",
+    "dependencies": {
+      "BlueConicClient/impl": []
+    }
+  }, {
+    "name": "impl",
+    "source_files": "BlueConicClient/impl/**/*"
+  }, {
+    "name": "Plugins",
+    "source_files": "BlueConicClient/Plugins/**/*",
+    "dependencies": {
+      "BlueConicClient/BlueConicClient": []
+    }
+  }]
+}
