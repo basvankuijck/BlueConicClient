@@ -16,39 +16,14 @@
     "http": "https://apps.e-sites.nl/BlueConic-iOS-SDK-2.1.7-Source.zip",
     "flatten": false
   },
-  "source_files": "BlueConicClient/BlueConicClient.h",
+  "source_files": "*.{h,swift,m}",
   "default_subspecs": "main",
   "resources": [
-    "BlueConicClient/Resources/*.{png}",
-    "BlueConicClient/Resources/**/*.{png}"
+    "*.{png}"
   ],
   "resource_bundles": {
     "Assets": [
-      "BlueConicClient/Resources/*.{png}",
-      "BlueConicClient/Resources/**/*.{png}"
+      "*.{png}"
     ]
-  },
-  "subspecs": [{
-    "name": "main",
-    "dependencies": {
-      "BlueConicClient/BlueConicClient": [],
-      "BlueConicClient/impl": [],
-      "BlueConicClient/Plugins": []
-    }
-  }, {
-    "name": "BlueConicClient",
-    "source_files": "BlueConicClient/*",
-    "dependencies": {
-      "BlueConicClient/impl": []
-    }
-  }, {
-    "name": "impl",
-    "source_files": "BlueConicClient/impl/**/*"
-  }, {
-    "name": "Plugins",
-    "source_files": "BlueConicClient/Plugins/**/*",
-    "dependencies": {
-      "BlueConicClient/BlueConicClient": []
-    }
-  }]
+  }
 }
