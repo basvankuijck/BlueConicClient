@@ -13,8 +13,8 @@
     "ios": "8.0"
   },
   "source": {
-    "http": "https://github.com/basvankuijck/BlueConicClient/raw/master/BlueConic-iOS-SDK-2.1.7-Source-Swift2.3.zip",
-    "flatten": true
+    "http": "https://apps.e-sites.nl/BlueConic-iOS-SDK-2.1.7-Source.zip",
+    "flatten": false
   },
   "source_files": "BlueConicClient/BlueConicClient.h",
   "default_subspecs": "main",
